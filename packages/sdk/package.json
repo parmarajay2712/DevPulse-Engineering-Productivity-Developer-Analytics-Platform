@@ -1,0 +1,15 @@
+{
+  "name": "@devpulse/sdk",
+  "version": "1.0.0",
+  "description": "DevPulse SDK for capturing application events",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
