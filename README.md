@@ -533,8 +533,8 @@ Distributed under the **MIT License**.
 
 **Built with the MERN stack and Socket.io**
 
-[![GitHub](https://img.shields.io/badge/GitHub-yourusername-181717?style=flat-square&logo=github)](https://github.com/your-username)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-yourprofile-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
+[![GitHub](https://img.shields.io/badge/GitHub-parmarajay2712-181717?style=flat-square&logo=github)](https://github.com/parmarajay2712)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-ajayparmar27-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/ajayparmar27)
 
 <br/>
 
