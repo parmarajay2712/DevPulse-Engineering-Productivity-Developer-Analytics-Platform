@@ -26,7 +26,7 @@ export const useCurrentProject = () => {
   const projects = projectsQuery.data || [];
   const savedId = selectedProjectIdQuery.data;
   
-  let currentProject = null;
+  let currentProject: any = null;
   if (projects.length > 0) {
     currentProject = projects.find((p: any) => p._id === savedId) || projects[0];
     
