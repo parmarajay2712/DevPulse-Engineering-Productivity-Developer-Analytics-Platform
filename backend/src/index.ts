@@ -26,9 +26,13 @@ dotenv.config({ quiet: true });
 
 export const app = express();
 const server = http.createServer(app);
+const allowedOrigin = process.env.FRONTEND_URL || '*';
+
 export const io = new Server(server, {
   cors: {
-    origin: '*',
+    origin: allowedOrigin,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+    credentials: true,
   },
 });
 
@@ -47,7 +51,10 @@ io.on('connection', (socket) => {
 
 // Middlewares
 app.use(helmet());
-app.use(cors());
+app.use(cors({
+  origin: allowedOrigin,
+  credentials: true,
+}));
 app.use(express.json());
 
 // Basic Route
