@@ -9,8 +9,9 @@ export const useSocket = (projectId: string) => {
     if (!projectId) return;
 
     // Connect directly to the backend to bypass any Vite proxy WS issues
-    console.log('Initializing socket connection to http://localhost:5000...');
-    const newSocket = io('http://localhost:5000', {
+    const socketUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+    console.log(`Initializing socket connection to ${socketUrl}...`);
+    const newSocket = io(socketUrl, {
       transports: ['websocket', 'polling'],
     });
 
